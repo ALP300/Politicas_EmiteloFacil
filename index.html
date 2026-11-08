@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Privacidad – Emítelo Fácil</title>
+    <meta name="description"
+        content="Política de privacidad de Emítelo Fácil, la aplicación de punto de venta para tu negocio." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --gold: #f8dd65;
+            --dark: #0f0f13;
+            --dark-2: #18181f;
+            --dark-3: #22222d;
+            --dark-4: #2d2d3a;
+            --text: #e8e8f0;
+            --text-muted: #8888a8;
+            --border: rgba(248, 221, 101, 0.15);
+            --radius: 12px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--dark);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--dark-2) 0%, var(--dark-3) 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 60px 24px 48px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(248, 221, 101, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .logo-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(248, 221, 101, 0.1);
+            border: 1px solid var(--border);
+            border-radius: 50px;
+            padding: 8px 20px;
+            margin-bottom: 24px;
+        }
+
+        .logo-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--gold);
+            box-shadow: 0 0 10px var(--gold);
+        }
+
+        .logo-badge span {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--gold);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: clamp(28px, 5vw, 42px);
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero h1 span {
+            color: var(--gold);
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .update-tag {
+            display: inline-block;
+            margin-top: 20px;
+            background: var(--dark-4);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 4px 12px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .update-tag strong {
+            color: var(--gold);
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        .section {
+            background: var(--dark-2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 32px;
+            margin-bottom: 20px;
+            transition: border-color 0.2s;
+        }
+
+        .section:hover {
+            border-color: rgba(248, 221, 101, 0.3);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: rgba(248, 221, 101, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .section h2 {
+            font-size: 17px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .section p,
+        .section li {
+            font-size: 14.5px;
+            color: var(--text-muted);
+            line-height: 1.75;
+        }
+
+        .section ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        .section li {
+            margin-bottom: 6px;
+        }
+
+        .section p+p {
+            margin-top: 10px;
+        }
+
+        .highlight {
+            background: rgba(248, 221, 101, 0.06);
+            border-left: 3px solid var(--gold);
+            border-radius: 0 8px 8px 0;
+            padding: 14px 18px;
+            margin-top: 14px;
+            font-size: 14px;
+            color: var(--text);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+            font-size: 14px;
+        }
+
+        .data-table th {
+            text-align: left;
+            padding: 10px 14px;
+            background: var(--dark-3);
+            color: var(--gold);
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .data-table th:first-child {
+            border-radius: 8px 0 0 0;
+        }
+
+        .data-table th:last-child {
+            border-radius: 0 8px 0 0;
+        }
+
+        .data-table td {
+            padding: 10px 14px;
+            border-top: 1px solid var(--dark-4);
+            color: var(--text-muted);
+            vertical-align: top;
+        }
+
+        .data-table tr:hover td {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 9px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            background: rgba(248, 221, 101, 0.12);
+            color: var(--gold);
+            border: 1px solid rgba(248, 221, 101, 0.2);
+        }
+
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: var(--dark-3);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 18px 22px;
+            margin-top: 16px;
+        }
+
+        .contact-icon {
+            font-size: 28px;
+            flex-shrink: 0;
+        }
+
+        .contact-card p {
+            margin: 0;
+        }
+
+        .contact-card a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px 24px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        footer strong {
+            color: var(--gold);
+        }
+
+        code {
+            background: var(--dark-4);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: var(--gold);
+        }
+
+        a {
+            color: var(--gold);
+        }
+
+        @media (max-width: 600px) {
+            .section {
+                padding: 22px 18px;
+            }
+
+            .data-table {
+                font-size: 13px;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="logo-badge">
+            <div class="logo-dot"></div>
+            <span>Emítelo Fácil</span>
+        </div>
+        <h1>Política de <span>Privacidad</span></h1>
+        <p>Tu privacidad es nuestra prioridad. Aquí te explicamos qué datos usamos y por qué.</p>
+        <div class="update-tag">Última actualización: <strong>20 de septiembre de 2026</strong></div>
+    </header>
+
+    <main class="container">
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">🏢</div>
+                <h2>1. Quiénes somos</h2>
+            </div>
+            <p><strong style="color:#fff">Emítelo Fácil</strong> es una aplicación móvil de punto de venta (POS) diseñada para ayudar a negocios a gestionar
+                ventas, productos, sucursales y comprobantes de forma eficiente.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">📊</div>
+                <h2>2. Datos que recopilamos</h2>
+            </div>
+            <p>Emítelo Fácil recopila únicamente los datos necesarios para su funcionamiento. No vendemos ni compartimos datos
+                personales con terceros con fines publicitarios.</p>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Dato</th>
+                        <th>Finalidad</th>
+                        <th>Almacenamiento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Correo electrónico y contraseña</td>
+                        <td>Autenticación de usuario</td>
+                        <td><span class="badge">Firebase Auth</span></td>
+                    </tr>
+                    <tr>
+                        <td>Datos del negocio (productos, ventas, sucursales)</td>
+                        <td>Operación del POS</td>
+                        <td><span class="badge">Firebase Firestore</span></td>
+                    </tr>
+                    <tr>
+                        <td>Imágenes de productos</td>
+                        <td>Catálogo visual</td>
+                        <td><span class="badge">Firebase Storage</span></td>
+                    </tr>
+                    <tr>
+                        <td>Preferencias de la app</td>
+                        <td>Configuración local</td>
+                        <td><span class="badge">Dispositivo</span></td>
+                    </tr>
+                    <tr>
+                        <td>Imágenes de cámara (escaneo)</td>
+                        <td>Lectura de códigos de barras</td>
+                        <td><span class="badge">Solo en memoria</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="highlight">
+                📷 Las imágenes captadas por la cámara para escanear códigos de barras <strong>no se almacenan</strong>
+                ni se envían a ningún servidor. Se procesan únicamente en el dispositivo en tiempo real.
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">🔐</div>
+                <h2>3. Permisos del dispositivo</h2>
+            </div>
+            <ul>
+                <li><strong style="color:#fff">Cámara</strong> — Para escanear códigos de barras de productos al momento
+                    de la venta. No se graba ni almacena ningún video o imagen.</li>
+                <li><strong style="color:#fff">Micrófono</strong> — Requerido por Android junto con el acceso a la
+                    cámara. La aplicación <strong>no graba audio</strong> en ningún momento.</li>
+                <li><strong style="color:#fff">Internet</strong> — Para sincronizar datos con Firebase y enviar
+                    comprobantes por WhatsApp.</li>
+                <li><strong style="color:#fff">Almacenamiento</strong> — Para guardar temporalmente comprobantes en PDF
+                    antes de compartirlos.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">⚙️</div>
+                <h2>4. Cómo usamos tus datos</h2>
+            </div>
+            <ul>
+                <li>Autenticarte de forma segura en la aplicación.</li>
+                <li>Almacenar y sincronizar la información de tu negocio (productos, ventas, clientes, sucursales).</li>
+                <li>Generar comprobantes en PDF para compartir con tus clientes por WhatsApp.</li>
+                <li>Recordar tus preferencias locales entre sesiones.</li>
+            </ul>
+            <div class="highlight">
+                Emítelo Fácil <strong>no utiliza tus datos para publicidad</strong>, no los vende a terceros, y no realiza
+                análisis de comportamiento del usuario con fines comerciales.
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">☁️</div>
+                <h2>5. Servicios de terceros</h2>
+            </div>
+            <p>Emítelo Fácil utiliza los siguientes servicios de terceros:</p>
+            <ul>
+                <li><strong style="color:#fff">Google Firebase</strong> — Autenticación, base de datos y almacenamiento.
+                    Ver política en <a href="https://policies.google.com/privacy"
+                        target="_blank">policies.google.com/privacy</a>.</li>
+                <li><strong style="color:#fff">WhatsApp</strong> — Para compartir comprobantes. Emítelo Fácil abre la app
+                    WhatsApp sin acceder a tus contactos ni mensajes.</li>
+                <li><strong style="color:#fff">Expo / EAS</strong> — Plataforma de distribución y actualizaciones de la
+                    aplicación.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">🗓️</div>
+                <h2>6. Retención de datos</h2>
+            </div>
+            <p>Tus datos se conservan mientras tu cuenta esté activa. Si deseas eliminar tu cuenta y todos los datos
+                asociados, contáctanos directamente.</p>
+            <p>Los datos locales del dispositivo se eliminan automáticamente al desinstalar la aplicación.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">⚖️</div>
+                <h2>7. Tus derechos</h2>
+            </div>
+            <ul>
+                <li><strong style="color:#fff">Acceder</strong> a los datos que tenemos sobre ti.</li>
+                <li><strong style="color:#fff">Corregir</strong> datos incorrectos.</li>
+                <li><strong style="color:#fff">Eliminar</strong> tu cuenta y todos tus datos.</li>
+                <li><strong style="color:#fff">Exportar</strong> la información de tu negocio.</li>
+                <li><strong style="color:#fff">Revocar permisos</strong> desde la configuración de Android en cualquier
+                    momento.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">🛡️</div>
+                <h2>8. Seguridad</h2>
+            </div>
+            <ul>
+                <li>Toda la comunicación con Firebase se realiza mediante <strong style="color:#fff">HTTPS/TLS</strong>.
+                </li>
+                <li>Las contraseñas son gestionadas por Firebase Authentication y <strong style="color:#fff">nunca se
+                        almacenan en texto plano</strong>.</li>
+                <li>El acceso a los datos está protegido mediante reglas de seguridad de Firestore.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">👶</div>
+                <h2>9. Menores de edad</h2>
+            </div>
+            <p>Emítelo Fácil es una aplicación de uso empresarial destinada a personas mayores de 18 años. No recopilamos datos
+                de menores de edad. Si tienes conocimiento de ello, contáctanos para eliminarlos.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">📝</div>
+                <h2>10. Cambios a esta política</h2>
+            </div>
+            <p>Podemos actualizar esta política ocasionalmente. Te notificaremos sobre cambios significativos a través
+                de la aplicación o por correo electrónico. La fecha de "Última actualización" siempre reflejará la
+                versión vigente.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">📬</div>
+                <h2>11. Contacto</h2>
+            </div>
+            <p>Para preguntas sobre privacidad o ejercer tus derechos, contáctanos:</p>
+            <div class="contact-card">
+                <div class="contact-icon">📧</div>
+                <div>
+                    <p style="color:#fff;font-weight:600;margin-bottom:2px">Emítelo Fácil</p>
+                    <p>Responsable de la aplicación</p>
+                    <p><a href="mailto:emitelofacil@gmail.com">emitelofacil@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <strong>Emítelo Fácil</strong> · Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
